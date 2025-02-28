@@ -13,14 +13,17 @@ class StringBuilder {
   }
 
   padStart(str) {
-
+    this.#value = this.#value.padStart(this.#value.length + 1, str)
   }
 
   padEnd(str) {
-    
+    this.#value = this.#value.concat(str)
   }  
 
   padBoth(str) {
+    this.#value = this.#value
+      .padStart(this.#value.length + 2, str)
+      .concat(str)
     
   }
 };
