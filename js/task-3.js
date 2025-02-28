@@ -22,7 +22,7 @@ class StringBuilder {
 
   padBoth(str) {
     this.#value = this.#value
-      .padStart(this.#value.length + 2, str)
+      .padStart(this.#value.length + 1, str)
       .concat(str)
     
   }
